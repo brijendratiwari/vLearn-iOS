@@ -1,0 +1,633 @@
+/*
+ Localizable.strings
+ vLearn
+ 
+ Created by ignis2 on 26/04/14.
+ Copyright (c) 2014 ignis2. All rights reserved.
+ */
+
+/* Server Responses */
+
+"Error" = "Error";
+
+"Logging in" = "Iniciando Sesión";
+
+"Registering" = "Registrando";
+
+"Success!" = "Éxito!";
+
+"Sorry" = "Disculpe";
+"Sorry!" = "Disculpe!";
+
+"Updating profile" = "Actualizando perfil";
+
+"There was an error connecting to the server" = "Ocurrió un error al conectar con el servidor";
+
+"Try again!" = "Intenta nuevamente!";
+
+"Both fields are required" = "Ambos campos son requeridos";
+
+"All fields are required" = "Todos los campos son requeridos";
+
+"Sharing" = "Compartiendo";
+
+"Me" = "Me";
+
+"Language: English" = "Idioma";
+
+"Learning Together" = "Aprendiendo Juntos";
+
+
+/* Buttons */
+
+"Start" = "Inicio";
+
+"Continue" = "Continuar";
+
+"Cancel" = "Cancelar";
+
+"Camera" = "Cámara";
+
+"Saved photos" = "Fotos guardadas";
+
+"Ok" = "Ok";
+
+"Update" = "Actualizar";
+
+"Register" = "Registrar";
+
+"Back to Registration" = "Volver al Registro";
+
+"Select" = "Aceptar";
+
+"Save" = "Guardar";
+
+"Login" = "Ingresar";
+
+"Create an Account" = "Crear una Cuenta";
+
+"Logout" = "Desconectarse";
+
+"Save Question & Answers" = "Guardar preguntas y resp.";
+
+"Search" = "Buscar";
+
+"My Account" = "Mi Cuenta";
+
+"Game Mode" = "Modo Juego";
+
+"My Profile" = "Mi Perfil";
+
+"+Add New Game" = "+Juego Nuevo";
+
+"< Back" = "< Volver";
+
+"Edit" = "Editar";
+
+"Back" = "Volver";
+
+"+ Add New" = "+ Agregar";
+
+"My Settings"="Mi configuración";
+
+"My vLearn"="Mi vLearn";
+
+"My Kid"="Mi Kid";
+
+"Submit" = "Presentar";
+
+/* P2LRegisterViewController */
+
+"Create New Account" = "Crear nueva cuenta";
+
+"First Name" = "Nombre";
+
+"Last Name" = "Apellido";
+
+"DOB" = "Nacimiento";
+
+"Username" = "Usuario";
+
+"Password" = "Contraseña";
+
+"Grade" = "Grado";
+
+"Role" = "Rol";
+
+"Gender" = "Género";
+
+"Short Bio" = "Biográfica";
+
+"School Name:" = "Nombre de la escuela:";
+
+"School Level:" = "Nivel escolar:";
+
+"Zip Code" = "Código Postal";
+
+"Mobile No." = "número Móvil";
+
+"Are you representing your organization?" = "Representa usted a su organización?";
+
+"I'm an Individual sponsor" = "Soy un patrocinador individual";
+
+"Why are you interested in becoming a Learning Padrino/Madrina?" = "Por qué está interesado en convertirse en un aprendizaje Padrino / Madrina?";
+
+"How did you hear about us?" = "Cómo se enteró de nosotros?";
+
+"Select Choice" = "Seleccione una opción";
+
+"Select Method" = "Seleccione el método de";
+
+"Select Teacher Level" = "Seleccione Nivel Maestro";
+
+"Preferred Method of Communication" = "Método preferido de comunicación";
+
+"Preferred Language of Communication"="Idioma preferido de comunicación";
+
+
+//Edit Set Page
+
+"Click here to add your vLearn Description." = "Haga clic aquí para agregar su vLearn Descripción.";
+
+"Title" = "Título";
+
+"Select Language" = "Selecciona Idioma";
+
+"Stage" = "Etapa";
+
+"Select Domain" = "Seleccione Dominio";
+
+"Select Standard" = "Seleccione Estándar";
+
+"Select Skill" = "Seleccione Habilidad";
+
+"Select Careers" = "Seleccione Carreras";
+
+"Tell us about you" = "Cuéntenos sobre usted";
+
+"Stage/Grade:" = "Etapa / Grado:";
+
+"Video Name" = "Vídeo Nombre";
+
+//Loading Message
+"Loading videos" = "Loading vídeos";
+
+"Fetching class types.." = "Tipos de clase Fetching..";
+
+"Saving child" = "Ahorrar niño";
+
+"Updating profile" = "Actualizar el perfil";
+
+"Saving video..." = "Ahorrar vídeo...";
+
+"Registering" = "Registro";
+
+"Searching videos" = "Búsqueda de videos";
+
+"Sharing"="Compartir";
+
+"Publishing" = "Publicación";
+
+"Facebook Sharing" = "Facebook Compartir";
+
+"Twitter Sharing" = "Twitter Compartir";
+
+"No Internet Connection" = "Sin conexión a Internet";
+
+"Network Error" = "Error de red";
+
+"Submitting..." = "Presentar...";
+//Alert Message
+
+"Could not assign games to kids" = "No se pudo asignar juegos a los niños";
+
+"Could not assign games to this kids" = "No se pudo asignar juegos a estos niños";
+
+//Share View
+
+"You're not logged in!" = "Usted no está conectado!";
+
+"Please try again later" = "Por favor, inténtelo de nuevo más tarde";
+
+"Something went Wrong" = "Algo salió mal";
+
+"Session error" = "Error de sesión";
+
+"Facebook error" = "Error Facebook";
+
+"Your current session is no longer valid. Please log in again." = "Su sesión actual ya no es válida. Por favor, iniciar sesión nuevamente.";
+
+"Share" = "Compartir";
+
+
+"Knowledge is Power!" = "El conocimiento es poder!";
+
+"Add a Caption" = "Agregar un Título";
+
+//Commnunity Alert Message
+
+"Could not search public videos to learning bank" = "No se pudo buscar vídeos públicos de aprender banco";
+
+//Dashboard AlertMessage
+
+"Could not get videos from learning bank" = "No se pudo obtener los vídeos de aprendizaje banco";
+
+"There are no videos for now. Come back soon to check again. Be the first one to share a video for this category. Just click on the camera roll on the top right and unleah your creativity!" = "No hay videos por el momento. Vuelve pronto para comprobar de nuevo. ¡Sé el primero en compartir un video para esta categoría. Simplemente haga clic en el rollo de la cámara en la parte superior derecha y unleah su creatividad!";
+
+
+//Set Category AlertMesage
+"Could not upload Set to learning bank" = "No se pudo cargar Set para aprender banco";
+
+"Please select Parent and Teacher, And try again" = "Por favor, seleccione de Padres y Maestros, y vuelva a intentarlo";
+
+"Twitter is not configured" = "Twitter no está configurado";
+
+"Could not assign games to kids" = "No se pudo asignar juegos a los niños";
+
+"Username already exists. Please try another username." = "Nombre de usuario ya existe. Por favor, pruebe con otro nombre de usuario.";
+
+"Please select child avatar" = "Por favor seleccione avatar niño";
+
+"Please input your email address." = "Por favor, introduzca su dirección de correo electrónico.";
+
+"Your feedback is super important!" = "Su opinión es muy importante!";
+
+"Could not submit to learning bank" = "No se pudo presentar a aprender banco";
+
+"Enter Your Feedback" = "Escriba su opinión";
+
+"Please select or reselect Domain" = "Por favor seleccione o volver a seleccionar Domain";
+
+"Please select or reselect Subject." = "Por favor seleccione o volver a seleccionar Asunto.";
+
+"Could not get Domains by this Subject" = "No se pudo obtener Dominios por este Sujeto";
+
+/* P2LAppDelegate*/
+
+"New Question" = "Nueva Pregunta";
+
+"Could not retrieve list of careers" = "No se pudo obtener la lista de carreras";
+
+"Could not retrieve list of roles" = "No se pudo obtener la lista de roles";
+
+"Could not retrieve list of grades and categories" = "No se pudo obtener la lista de grados y categorías";
+
+/* P2LWelcomeViewController */
+
+"A community of parents and educators committed to turning our Kid's learning into a fun & magical experience!" = "Una comunidad de padres y educadores comprometidos a convertir el aprendizaje de nuestros niños en una experiencia divertida y mágica!";
+
+/* P2LWelcomeViewController */
+
+"Please enter lock code" = "Por favor ingrese el código de desbloqueo";
+
+"To Play Mode" = "Al Modo Juego";
+
+"Go" = "Ir";
+
+"You entered an incorrect unlcok code" = "Ingresó un código incorrecto";
+
+/* P2LLoginViewController */
+
+"Login with my PlazaFamilia Account" = "Iniciar sesión con mi cuenta PlazaFamilia";
+
+"First time here?" = "Primera vez aquí?";
+
+
+
+"Forgot Password" = "Olvidé mi contraseña";
+
+
+
+/* P2LGenderSelectionViewController */
+
+"Male" = "Masculino";
+
+"Female" = "Femenino";
+
+"Select gender" = "Selecciona género";
+
+/* P2LDateSelectionViewController */
+
+"Select date" = "Selecciona fecha";
+
+/* P2LRoleSelectionViewController */
+
+"Select Role" = "Selecciona Rol";
+
+/* P2LGradeSelectionViewController */
+
+"Select Grade" = "Selecciona Grado";
+
+/* P2LInfoViewController */
+
+"3 easy steps to get started" = "3 simples pasos para comenzar";
+
+/* P2LProfileMeViewController */
+
+"Set Lock Code" = "Cód. de bloqueo";
+
+"Set lock code" = "Programar";
+
+"Lock Code" = "Cód. bloqueo";
+
+"Update Lock Code" = "Actualizar código de bloqueo";
+
+"Remove lock code" = "Quitar código de bloqueo";
+
+"Write this number in a safe place as the lock code can only be removed by uninstalling the application if lost" = "Anote este número en un lugar seguro ya que sólo puede ser removido desinstalando la aplicación";
+
+"My Sets" = "Mis juegos";
+
+"My profile" = "Mi perfil";
+
+"1 Game" = "1 Juego";
+
+"%d Games" = "%d Juegos";
+
+"Profile updated!" = "Perfil actualizado!";
+
+"Edit Account Details" = "Editar Detalles de Cuenta";
+
+"E-mail" = "E-mail";
+
+"ZIP Code" = "Código ZIP";
+
+/*Home ViewController*/
+
+"vLearning Bank" = "vLearning Banco";
+"My Community" = "Mi Comunidad";
+"Settings" = "Configuración";
+
+/* P2LSetCategoriesViewController */
+
+"Uploading set" = "Actualizando juego";
+
+"Category name" = "Nombre de Categoría";
+
+"Great! Your vLearn has been submitted for approval." = "Great! Su vLearn se ha presentado para su aprobación.";
+
+"Your vLearn has been submitted for approval."="Su vLearn se ha presentado para su aprobación.";
+
+
+/* P2LSetCategoriesViewController */
+
+"Could not update set information" = "No se pudo actualizar la información del juego";
+
+"Select source" = "Seleccione fuente";
+
+"New Game" = "Nuevo Juego";
+
+"(Language: English)" = "(Idioma: Español)";
+
+"Approve" = "Aprobar";
+
+/* P2LEditSetViewController */
+
+"Set Name" = "Nombre del Juego";
+
+"Description" = "Descripción";
+
+"Save and Add Questions" = "Guardar y Agregar Preg.";
+
+"Assignees" = "Asignados";
+
+/* P2LSubjectSelectionViewController */
+
+"Select Subject" = "Seleccione Materia";
+
+/* P2LSetQuestionsViewController */
+
+"Set name" = "Establecer nombre";
+
+"No correct answer selected" = "Sin respuesta correcta seleccionada";
+
+/* P2LQuestionEditViewController */
+
+"Questions" = "Preguntas";
+
+"Could not update question" = "No se pudo actualizar la consulta";
+
+"Could not save question %@" = "No se pudo guardar la pregunta %@";
+
+"Please select at least one correct answer" = "Por favor seleccione al menos una respuesta correcta";
+
+"Please enter answer text" = "Por favor ingrese el texto de la respuesta";
+
+"Questions" = "Preguntas";
+
+"Question title" = "Título de la pregunta";
+
+"Answers" = "Respuestas";
+
+"Answer" = "Respuesta";
+
+"+Add Answer" = "+ Nueva";
+
+"(set on for right answer)" = "(Fije la respuesta correcta)";
+
+/* P2LShareViewController */
+
+"I just shared - %@ – A fun %@ activity for %@ graders #Familia" = "Acabo de compartir - %@ – Una divertida actividad %@ para %@ grado #Familia";
+
+"Setup Error" = "Error de Instalación";
+
+"Missing app ID. You cannot run the app until you provide this in the code." = "No se encontró el ID. No puedes ejecutar la aplicación hasta que proveas el código.";
+
+"Invalid or missing URL scheme. You cannot run the app until you set up a valid URL scheme in your .plist." = "Esquema URL inválido o perdido. No puedes ejecutar la aplicación hasta que ingreses una URL válida en tu .plist.";
+
+"Uploading Set image" = "Cargando imagen del juego";
+
+"Could not share Set, please try again" = "No se pudo compartir el juego, por favor intente nuevamente";
+
+"Uploading \"%@\" audio" = "Cargando audio \"%@\" ";
+
+"Uploading \"%@\" image" = "Cargando imagen \"%@\" ";
+
+"Tweet cancelled." = "Tweet cancelado.";
+
+"Tweet done." = "Tweet compartido.";
+
+"Twitter has not been enabled for this application, please do so in general settings" = "Twitter no esta habilitado para esta aplicación, por favor hágalo en la configuración general";
+
+"Sharing on facebook" = "Compartir en facebook";
+
+"Join kidsFunPlaza fun!" = "Únete al divertido kidsFunPlaza!";
+
+"Learn playing" = "Aprende jugando";
+
+"Set shared with the community" = "Juego compartido con la comunidad";
+
+"Yay!" = "Sii!";
+
+"Set shared!!" = "Juego compartido!!";
+
+"Could not share on facebook" = "No se pudo compartir en facebook";
+
+"Could not get Facebook permission" = "No se pudo obtener el permiso de Facebook";
+
+"Share Set" = "Compartir Juego";
+
+"Check the Plaza familia learning bank" = "Chequear el banco de aprendizaje de Plaza familia";
+
+"Share on Facebook" = "Compartir en Facebook";
+
+"Share on Twitter" = "Compartir en Twitter";
+
+"Just Upload in My Cloud (Private)" = "Solo Subir a Mi Nube (Privado)";
+
+"Share on Learning Bank (Public)" = "Compartir en el banco (Publico)";
+
+/* P2LSearchSetViewController */
+
+"Keywords" = "Palabras clave";
+
+"Subject" = "Materia";
+
+"Search learning bank" = "Buscar en el banco de aprendizaje";
+
+"Searching" = "Buscando";
+
+"No results for your search" = "No se encontraron resultados";
+
+"There was an error performing the search" = "Ocurrió un error al realizar la búsqueda";
+
+/* P2LSearchResultsViewController */
+
+"Search Result" = "Resultado de la Búsqueda";
+
+"Download" = "Descargar";
+
+"Downloading" = "Descargando";
+
+"Do you want to download this questions set?" = "¿Quieres descargar este juego de preguntas?";
+
+"Set already downloaded" = "Ya tienes este juego";
+
+"Could not download set" = "No se pudo descargar el juego";
+
+"Yay!!" = "Sii!!";
+
+"Set downloaded!" = "Juego descargado!";
+
+/* P2LCareerSelectionViewController */
+
+"Children" = "Niños";
+
+"Close" = "Cerrar";
+
+/* P2LAssigneeSelectionController */
+
+"Select children" = "Seleccione niño";
+
+/* P2LChildrenViewController */
+
+"Children" = "Niños";
+
+"Class Name :" = "Nombre de Clase :";
+
+"Grade Name :" = "Nombre Grado :";
+
+"Class Type :" = "Tipo Clase :";
+
+"Class Grade :" = "Clase Grado :";
+
+"Add New Class" = "Añadir Nueva Clase";
+
+"Could not add child, try again" = "No se pudo agregar el niño, intente nuevamente";
+
+"Add New Child" = "Agregar Nuevo Niño";
+
+"Please enter child name" = "Por favor ingrese el nombre del niño";
+
+"Please enter child last name" = "Por favor ingrese el apellido del niño";
+
+"Please select child grade" = "Por favor ingrese el grado del niño";
+
+"Please enter child username" = "Por favor ingrese el nombre de usuario del niño";
+
+"Please enter child password" = "Por favor ingrese la contraseña del niño";
+
+"Saving child" = "Guardando niño";
+
+"Could not update information, please try again" = "No se pudo actualizar la información, por favor intente nuevamente";
+
+"Edit kid" = "Editar niño";
+
+"Could not save changes" = "No se pudieron guardar los cambios";
+
+/* P2LStartGameViewController */
+
+"First, you need to select player 1 and the corresponding set" = "Primero debes seleccionar el jugador 1 y el juego correspondiente";
+
+"Please select set for player 1" = "Por favor seleccione juego para el jugador 1";
+
+"Please select set for player 2" = "Por favor seleccione juego para el jugador 2";
+
+"Selected set for player 1 does not have any questions" = "El juego seleccionado para el jugador 1 no tiene preguntas";
+
+"Selected set for player 2 does not have any questions" = "El juego seleccionado para el jugador 2 no tiene preguntas";
+
+"Change" = "Cambiar";
+
+"Add second player" = "Agregar segundo jugador";
+
+/* P2LGameViewController */
+
+"Answers: %d of %d" = "Respuestas: %d de %d";
+
+"It's your turn %@, are you ready?" = "Es tu turno %@, estas listo?";
+
+"%@ is the winner" = "%@ es el ganador";
+
+"%@ and %@ are both the winners!" = "%@ y %@ ambos son los ganadores!";
+
+"Play Again" = "Jugar\nde\nNuevo";
+
+"New Game" = "Juego\nNuevo";
+
+/* P2LStartGameViewController */
+
+"Play" = "Jugar";
+
+/* P2LSpeedSelectionViewController */
+
+"Player 1" = "Jugador 1";
+
+"Player 2" = "Jugador 2";
+
+"Slow" = "Lento";
+
+"Normal" = "Normal";
+
+"Fast" = "Rápido";
+
+/* P2LGameViewController */
+
+"Play!" = "Jugar!";
+
+/* P2LAnswerCell */
+
+"Delete" = "Borrar";
+
+/* P2LAudioManager */
+
+"Could not load audio file" = "No se pudo cargar el audio";
+
+"Could not start recording" = "No se pudo iniciar la grabación";
+
+"This will permanently delete the audio file" = "Esto borrará el archivo permanentemente";
+
+"Warning" = "Cuidado";
+
+"Resume" = "Reanudar";
+
+"Pause" = "Pausar";
+
+"Play " = "Iniciar";
+
+"Use" = "Usar";
+
+"Stop" = "Detener";
+
+"Record" = "Grabar";
+

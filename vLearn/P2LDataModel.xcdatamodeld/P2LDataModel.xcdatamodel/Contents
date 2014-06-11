@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12E55" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Answer" representedClassName="Answer" syncable="YES">
+        <attribute name="audioPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="correct" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="question" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Question" inverseName="answers" inverseEntity="Question" syncable="YES"/>
+    </entity>
+    <entity name="Child" representedClassName="Child" syncable="YES">
+        <attribute name="gender" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="grade" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Grade" inverseName="children" inverseEntity="Grade" syncable="YES"/>
+    </entity>
+    <entity name="Grade" representedClassName="Grade" syncable="YES">
+        <attribute name="grade_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="children" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Child" inverseName="grade" inverseEntity="Child" syncable="YES"/>
+        <relationship name="sets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Set" inverseName="grade" inverseEntity="Set" syncable="YES"/>
+    </entity>
+    <entity name="Question" representedClassName="Question" syncable="YES">
+        <attribute name="audioPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="answers" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Answer" inverseName="question" inverseEntity="Answer" syncable="YES"/>
+        <relationship name="set" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Set" inverseName="questions" inverseEntity="Set" syncable="YES"/>
+    </entity>
+    <entity name="Set" representedClassName="Set" syncable="YES">
+        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="setDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="grade" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Grade" inverseName="sets" inverseEntity="Grade" syncable="YES"/>
+        <relationship name="questions" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Question" inverseName="set" inverseEntity="Question" syncable="YES"/>
+        <relationship name="subject" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Subject" inverseName="sets" inverseEntity="Subject" syncable="YES"/>
+    </entity>
+    <entity name="Subject" representedClassName="Subject" syncable="YES">
+        <attribute name="cat_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Set" inverseName="subject" inverseEntity="Set" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Answer" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="Child" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="Grade" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="Question" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="Set" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="Subject" positionX="160" positionY="192" width="128" height="90"/>
+    </elements>
+</model>

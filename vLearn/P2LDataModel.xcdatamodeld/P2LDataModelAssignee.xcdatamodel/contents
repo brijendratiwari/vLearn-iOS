@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13A603" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Answer" representedClassName="Answer" syncable="YES">
+        <attribute name="audioPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="correct" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="question" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Question" inverseName="answers" inverseEntity="Question" syncable="YES"/>
+    </entity>
+    <entity name="Career" representedClassName="Career" syncable="YES">
+        <attribute name="careerId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="careerImg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="careerLocalImg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="careerName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="children" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Child" inverseName="career" inverseEntity="Child" syncable="YES"/>
+    </entity>
+    <entity name="Child" representedClassName="Child" syncable="YES">
+        <attribute name="childId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="career" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Career" inverseName="children" inverseEntity="Career" syncable="YES"/>
+        <relationship name="grade" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Grade" inverseName="children" inverseEntity="Grade" syncable="YES"/>
+        <relationship name="sets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Set" syncable="YES"/>
+    </entity>
+    <entity name="Domain" syncable="YES">
+        <attribute name="domainId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="domainName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="domainName_spanish" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="skills" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Skill" syncable="YES"/>
+        <relationship name="standards" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Standard" syncable="YES"/>
+    </entity>
+    <entity name="Grade" representedClassName="Grade" syncable="YES">
+        <attribute name="grade_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="children" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Child" inverseName="grade" inverseEntity="Child" syncable="YES"/>
+        <relationship name="sets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Set" inverseName="grade" inverseEntity="Set" syncable="YES"/>
+    </entity>
+    <entity name="Question" representedClassName="Question" syncable="YES">
+        <attribute name="audioPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="answers" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Answer" inverseName="question" inverseEntity="Answer" syncable="YES"/>
+        <relationship name="set" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Set" inverseName="questions" inverseEntity="Set" syncable="YES"/>
+    </entity>
+    <entity name="Rol" representedClassName="Rol" syncable="YES">
+        <attribute name="rolId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rolName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Set" representedClassName="Set" syncable="YES">
+        <attribute name="aboutus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="downloaded" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isdone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="setDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="setId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="setStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnailName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoFile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoPath" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="assignees" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Child" syncable="YES"/>
+        <relationship name="career" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Career" syncable="YES"/>
+        <relationship name="child" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Child" syncable="YES"/>
+        <relationship name="domain" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Domain" syncable="YES"/>
+        <relationship name="grade" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Grade" inverseName="sets" inverseEntity="Grade" syncable="YES"/>
+        <relationship name="questions" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Question" inverseName="set" inverseEntity="Question" syncable="YES"/>
+        <relationship name="skill" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Skill" syncable="YES"/>
+        <relationship name="stage" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Stage" syncable="YES"/>
+        <relationship name="standard" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Standard" syncable="YES"/>
+        <relationship name="subject" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Subject" inverseName="sets" inverseEntity="Subject" syncable="YES"/>
+    </entity>
+    <entity name="Skill" syncable="YES">
+        <attribute name="skillId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skillName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skillName_spanish" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Stage" syncable="YES">
+        <attribute name="stageId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stageName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stageName_spanish" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Standard" syncable="YES">
+        <attribute name="standardIndex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="standardValue" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Subject" representedClassName="Subject" syncable="YES">
+        <attribute name="cat_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Set" inverseName="subject" inverseEntity="Set" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Answer" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="Career" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="Child" positionX="160" positionY="192" width="128" height="208"/>
+        <element name="Domain" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="Grade" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="Question" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="Rol" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Set" positionX="160" positionY="192" width="128" height="403"/>
+        <element name="Skill" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Stage" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Standard" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Subject" positionX="160" positionY="192" width="128" height="90"/>
+    </elements>
+</model>
